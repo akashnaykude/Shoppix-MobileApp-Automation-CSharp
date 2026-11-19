@@ -12,5 +12,7 @@ public static class TestHost
     public static string AppPackage { get; set; } = "";
     public static string Email { get; set; } = "";
     public static string Password { get; set; } = "";
+    public static string GmailAddress { get; set; } = "";
+    public static string GmailAppPassword { get; set; } = "";
     public static Core.LoginData LoginData { get; set; } = null!;
 }

@@ -24,6 +24,8 @@ public sealed class Hooks
         LoadEnvironment(root);
         TestHost.Email = Environment.GetEnvironmentVariable("SHOPPIX_LOGIN_EMAIL") ?? "";
         TestHost.Password = Environment.GetEnvironmentVariable("SHOPPIX_LOGIN_PASSWORD") ?? "";
+        TestHost.GmailAddress = Environment.GetEnvironmentVariable("GMAIL_ADDRESS") ?? "";
+        TestHost.GmailAppPassword = Environment.GetEnvironmentVariable("GMAIL_APP_PASSWORD") ?? "";
 
         var loginDataPath = Path.Combine(root, LoginDataRelativePath.Replace('/', Path.DirectorySeparatorChar));
         TestHost.LoginData = LoginData.Load(loginDataPath);
