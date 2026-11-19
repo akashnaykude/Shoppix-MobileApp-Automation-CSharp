@@ -1,0 +1,16 @@
+## .NET build artifacts
+bin/
+obj/
+
+## Secrets
+.env
+
+## Test reports / artifacts
+allure-results/*
+!allure-results/.gitkeep
+artifacts/screenshots/*
+!artifacts/screenshots/.gitkeep
+
+## IDE
+.vs/
+*.user
